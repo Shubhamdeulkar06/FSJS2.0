@@ -1,0 +1,161 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #fff; */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.navbar-container .list {
+  display: flex;
+  list-style-type: none;
+  font-size: 25px;
+  margin-right: 110px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.list-item {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.list-item:first-child {
+  text-decoration: underline;
+  font-weight: bolder;
+  order: -1;
+}
+.list-item:nth-child(3) {
+  order: -1;
+}
+
+.nav-button {
+  padding: 8px 45px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-left: 12px;
+  font-size: 18px;
+  color: #878787;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* main */
+.hero-container {
+  display: flex;
+  margin: 0 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.square img {
+  position: absolute;
+  top: 53%;
+  left: 14%;
+  z-index: 1;
+  width: 20%;
+}
+
+.hero-container > div > img {
+  position: relative;
+  z-index: 1;
+  width: 115%;
+  right: -16%;
+  top: -12px;
+}
+
+.globe img {
+  position: absolute;
+  top: 18%;
+  left: 51%;
+  z-index: 1000;
+  width: 62px;
+}
+
+.square + .star {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 55px;
+}
+
+.star + .star > img {
+  position: absolute;
+  bottom: 10%;
+  left: 36%;
+  width: 3%;
+}
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.hero-container-right h1 {
+  text-align: center;
+  font-size: 63px;
+  margin: 147px 0px 40px 65px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.hero-container-right p {
+  text-align: center;
+  font-size: 17px;
+  margin: 0px 226px 60px;
+  font-family: "Roboto", sans-serif;
+  color: #555555;
+}
+
+.button-email {
+  padding: 5px 20px;
+  border: 3px solid black;
+  border-radius: 8px;
+  margin-left: 50px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+}
+
+.button-join {
+  padding: 2px 3px;
+  /* border: 3px solid black; */
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  /* margin-left: 50px; */
+}
+
+.hero-container-right:last-child {
+  align-items: center;
+  font-size: 25px;
+  /* justify-content: end; */
+}
+.hero-container-right:last-child .icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.hero-container-right:last-child .icons img {
+  margin-right: 10px;
+  width: 30px;
+  /* padding: 10px; */
+}
+.hero-container-right:last-child h4 {
+  margin-left: 40px;
+  margin-top: 85px;
+
+  /* justify-content: end; */
+}

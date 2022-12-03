@@ -1,0 +1,115 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+body {
+  /* background-image: url("./assets/bg.png"); */
+  /* background-size: cover; */
+  /* background-size: 100 100%; */
+  margin: 0;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+  /* padding-top: 300px; */
+}
+
+.container > section > .hero {
+  background-image: url("./assets/bg.png");
+  /* background-size: cover; */
+  background-position: center;
+  background-size: 100% 100%;
+  height: 87vh;
+  width: 100vw;
+
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px 80px;
+  background-color: #000;
+  color: #fff;
+  /* justify-content: space-evenly; */
+}
+/* logo */
+.navbar > div > img {
+  height: auto;
+  width: 100px;
+  margin-right: auto;
+}
+
+.list {
+  list-style-type: none;
+  /* color: #fff; */
+  font-weight: bold;
+}
+
+.list-item {
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.list-item:hover.list-item::after {
+  content: "\02C5";
+  padding-left: 5px;
+}
+
+.line {
+  border-right: 1px solid #fff;
+  margin: 0 60px;
+}
+
+/* btn small */
+.button-small {
+  border-radius: 7px;
+  color: #fff;
+  background-color: #ba0cc5;
+  border: none;
+  padding: 12px 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+/* btn large */
+.button-large {
+  border-radius: 7px;
+  color: #fff;
+  background-color: #ba0cc5;
+  border: none;
+  padding: 20px 25px;
+  line-height: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.grow-list + div {
+  margin-left: auto;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 70px;
+  margin: 110px 400px 0px;
+}
+.hero-heading::before {
+  content: " ";
+  padding: 15px;
+}
+
+.hero-description {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+}
