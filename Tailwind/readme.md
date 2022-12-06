@@ -1,1 +1,1 @@
-# This projects are only made using tailwind
+# This projects are only made using tailwind css
