@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   background-color: #2b2923;
-  font-family: "Alexandria", sans-serif;
+  /* font-family: "Alexandria", sans-serif; */
 }
 
 nav {
@@ -53,11 +55,11 @@ pre {
   font-size: 60px;
   margin: 10px 10px 10px 255px;
   align-self: flex-start;
-  font-weight: 800;
+  font-weight: bolder;
 }
 .top pre {
   margin: 44px 297px 20px 25px;
-  font-family: inherit;
+  /* font-family: inherit;s */
   line-height: 20px;
 }
 .bottom img {
