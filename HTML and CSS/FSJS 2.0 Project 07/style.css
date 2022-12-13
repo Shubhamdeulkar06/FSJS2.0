@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #151515;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  padding: 30px 0;
+}
+
+/* nav links */
+.list {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+/* nav button grouping */
+.button-group {
+  display: flex;
+  gap: 40px;
+}
+
+/* nav button */
+.nav-button {
+  border: none;
+  color: #fff;
+}
+
+.btn-position {
+  position: relative;
+  /* top: 3px; */
+}
+
+.btn-svg {
+  position: absolute;
+  right: 45px;
+  /* z-index: -1; */
+  opacity: 0.5;
+}
