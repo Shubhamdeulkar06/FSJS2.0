@@ -1,16 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #151515;
+  overflow-x: hidden;
 }
 .navbar-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #fff;
   padding: 30px 0;
+}
+/* utiliti classes */
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  /* padding-inline: 20px; */
+}
+.flex {
+  display: flex;
 }
 
 /* nav links */
@@ -39,7 +52,97 @@ body {
 
 .btn-svg {
   position: absolute;
-  right: 45px;
-  /* z-index: -1; */
-  opacity: 0.5;
+  right: 60px;
+  z-index: -1;
+}
+
+/* main section */
+.main-top {
+  margin-bottom: 100px;
+}
+.pink-word {
+  color: #f637ec;
+}
+.img-section {
+  position: relative;
+}
+
+.heading1 {
+  font-size: 50px;
+  margin-right: 135px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  line-height: 95px;
+  font-weight: 100;
+}
+/* p tag */
+.top-left-text {
+  margin-right: 700px;
+  margin-bottom: 30px;
+}
+.text {
+  font-size: 15px;
+  line-height: 25px;
+}
+.img-item-1 {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 52vw;
+}
+
+.img-item-2 {
+  position: absolute;
+  top: 68px;
+  right: -193px;
+  width: 52vw;
+}
+
+/* get-started-btn */
+.get-started-btn {
+  margin-left: 25px;
+  font-size: 25px;
+}
+.get-started-btn-svg {
+  position: absolute;
+  left: 0px;
+  top: -4px;
+  z-index: -1;
+  /* width: 150vw; */
+}
+
+/* main bottom section */
+.main-bottom {
+  margin: 30px 0;
+}
+.user-count {
+  /* border-right: 1px solid white; */
+  padding: 20px;
+  padding-left: 0;
+  width: 20%;
+  align-items: center;
+}
+
+.year-experience {
+  padding: 20px;
+  /* justify-content: center; */
+  width: 20%;
+  align-items: center;
+}
+.break {
+  margin-left: 10px;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+/* logo section */
+.logo-section {
+  margin-top: 80px;
+  background-color: #292929;
+}
+.logos {
+  justify-content: space-around;
+  padding: 80px 0;
 }
