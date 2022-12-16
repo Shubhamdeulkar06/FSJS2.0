@@ -154,8 +154,8 @@ h2 {
 }
 
 /* cards section */
-.top-right-card {
-}
+/* .top-right-card {
+} */
 
 .card-top {
   align-items: center;
@@ -230,7 +230,7 @@ h2 {
 
 /* rating section */
 .rating-section {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 .top-rating {
   margin-bottom: 80px;
@@ -246,7 +246,7 @@ h2 {
   margin-bottom: 80px;
   display: grid;
   grid-template-columns: 500px 500px;
-  gap: 80px;
+  gap: 100px;
 }
 
 .rating-card-1 {
@@ -299,4 +299,56 @@ hr {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+/*  <!-- custom section --> */
+.top-custom {
+  margin: 80px 0;
+  padding: 30px;
+}
+.rectangle-section {
+  position: relative;
+}
+.rect-1 {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.rect-2 {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.diamond-1 {
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  right: 0px;
+}
+.diamond-2 {
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: 0;
+}
+.black-word {
+  color: #151515;
+}
+
+.get-started-btn-svg2 {
+  position: absolute;
+  left: 430px;
+  top: -4px;
+  z-index: -1;
+  /* width: 150vw; */
+}
+
+.footer-content {
+  margin-top: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  padding: 30px 0;
+  gap: 250px;
 }
