@@ -227,3 +227,76 @@ h2 {
   position: relative;
   bottom: 40px;
 }
+
+/* rating section */
+.rating-section {
+  margin-bottom: 80px;
+}
+.top-rating {
+  margin-bottom: 80px;
+}
+.rating-heading {
+  font-size: 50px;
+  margin: 80px 186px 40px;
+  line-height: 95px;
+  font-weight: 100;
+}
+.bottom-rating {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  gap: 80px;
+}
+
+.rating-card-1 {
+  border: 2px solid #cecece;
+  background-color: #4f4d4c;
+}
+.rating-card-2,
+.rating-card-3,
+.rating-card-4 {
+  border: 1px solid #cecece;
+  background-color: #1e1f24;
+}
+
+.rating {
+  padding: 20px;
+}
+.text-align {
+  margin: 0 360px;
+}
+.center {
+  text-align: center;
+}
+
+.rated {
+  margin: 20px 0;
+}
+
+hr {
+  /* border-color: #f637ec; */
+  border: 1px dotted #f637ec;
+}
+.dot-1 {
+  height: 18px;
+  width: 115px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #f637ec;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  /* box-shadow: #f637ec; */
+  box-shadow: -1px 1px 50px rgba(246, 55, 236, 0.4);
+}
+
+.dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #444444;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
