@@ -333,6 +333,7 @@ hr {
 }
 .black-word {
   color: #151515;
+  font-weight: bold;
 }
 
 .get-started-btn-svg2 {
@@ -344,7 +345,8 @@ hr {
 }
 
 .footer-content {
-  margin-top: 200px;
+  margin-top: 300px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
