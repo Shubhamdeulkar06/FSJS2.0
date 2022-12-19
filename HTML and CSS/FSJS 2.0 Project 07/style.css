@@ -17,6 +17,9 @@ body {
   color: #fff;
   padding: 30px 0;
 }
+.main-logo {
+  cursor: pointer;
+}
 /* utiliti classes */
 .container {
   max-width: 1180px;
@@ -32,6 +35,10 @@ body {
   display: flex;
   gap: 50px;
   list-style-type: none;
+}
+.list-item:hover {
+  color: #f637ec;
+  cursor: pointer;
 }
 
 /* nav button grouping */
@@ -92,6 +99,7 @@ body {
   top: 15px;
   right: 20px;
   width: 52vw;
+  z-index: -1;
 }
 
 .img-item-2 {
@@ -99,6 +107,7 @@ body {
   top: 68px;
   right: -193px;
   width: 52vw;
+  z-index: -1;
 }
 
 /* get-started-btn */
@@ -160,6 +169,12 @@ h2 {
 .card-top {
   align-items: center;
 }
+.top-left-card {
+  width: 60%;
+}
+.top-right-card {
+  width: 40%;
+}
 
 .card-bottom {
   justify-content: space-between;
@@ -169,32 +184,34 @@ h2 {
   /* position: relative; */
 }
 
-.icon1,
-.icon3 {
+.icon {
   background-color: #272727;
   width: 25%;
-  /* height: 35vh; */
+  height: 35vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   border: 1px solid #cecece;
   gap: 20px;
+  text-align: center;
+  transition: 0.3s;
 }
 
-.icon2 {
+.icon:hover {
   background-color: #454240;
+  transform: translate(0, -100px);
   /* width: 25%; */
-  height: 35vh;
-  flex-direction: column;
+  /* height: 35vh; */
+  /* flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   margin-bottom: 40px;
   position: relative;
-  bottom: 50px;
-  border: 2px solid #cecece;
-  gap: 20px;
+  bottom: 50px; */
+  /* border: 2px solid #cecece; */
+  /* gap: 20px; */
 }
 
 /* card choices section */
@@ -245,20 +262,32 @@ h2 {
   margin-top: 50px;
   margin-bottom: 80px;
   display: grid;
-  grid-template-columns: 500px 500px;
-  gap: 100px;
+  /* grid-template-columns: 500px 500px;
+  gap: 100px; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
 }
 
-.rating-card-1 {
+/* .rating-card-1 {
   border: 2px solid #cecece;
   background-color: #4f4d4c;
+} */
+.rating-card {
+  border: 2px solid #cecece;
+  background-color: #1e1f24;
+  transition: 0.3s;
 }
-.rating-card-2,
+.rating-card:hover {
+  border: 2px solid #cecece;
+  background-color: #4f4d4c;
+  transform: translate(0, -10px);
+}
+/* .rating-card-2,
 .rating-card-3,
 .rating-card-4 {
   border: 1px solid #cecece;
   background-color: #1e1f24;
-}
+} */
 
 .rating {
   padding: 20px;
@@ -272,6 +301,10 @@ h2 {
 
 .rated {
   margin: 20px 0;
+}
+.sub-text {
+  color: #a8a7a7;
+  font-size: 15px;
 }
 
 hr {
