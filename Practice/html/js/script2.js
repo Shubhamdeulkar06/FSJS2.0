@@ -48,5 +48,30 @@ console.log(sum(5, 6));
 // let array1 = [1, 2, 3, 4, 5];
 // console.log(array1.fill(5, 1));
 
-let array1 = [1, 2, 3, 4, 5];
-console.log(array1.fill(6));
+// let array1 = [1, 2, 3, 4, 5];
+// console.log(array1.fill(6));
+
+// const array1 = ["a", "b", "c", "d"];
+// const keys = array1.keys();
+
+// for (const key of keys) {
+//   console.log(key);
+// }
+
+// include()
+const array1 = [1, 2, 3];
+
+console.log(array1.includes(2, 2));
+// expected output: true
+
+// let berries = ["Strawberry", "Blueberry", "Raspberry"];
+// console.log(berries.indexOf("Raspberry"));
+
+// let berries = ["Strawberry", "Blueberry", "Raspberry"];
+// console.log(berries.indexOf("Blackberry"));
+
+//
+
+// map()
+let maths = [1, 4, 9, 16, 25];
+console.log(maths.map(Math.sqrt));
