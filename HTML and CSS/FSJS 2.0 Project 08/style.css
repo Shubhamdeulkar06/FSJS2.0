@@ -42,9 +42,6 @@
   color: #0c8bfd;
 }
 
-.text {
-  color: #656363;
-}
 /*------------- nav bar------------------------------------ */
 .navbar {
   background-color: #111010;
@@ -74,19 +71,27 @@
 /* --------------main section--------------------------------- */
 .main-section {
   background-color: #111010;
+  padding: 60px 0;
 }
 .main-heading {
   color: #fff;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
-
+.text {
+  color: #656363;
+  margin: 30px 175px 60px 0;
+}
+.btn-group {
+  gap: 40px;
+}
 /* ----------logo section --------------------------------- */
 
 .logo-section {
-  margin-top: 80px;
   background-color: #292929;
 }
 .logos {
   justify-content: space-around;
-  padding: 80px 0;
+  padding: 45px 0;
   flex-wrap: wrap;
 }
