@@ -7,3 +7,4 @@
 | 3      | [CSS Positions](https://shubham06.hashnode.dev/css-positions)                               |
 | 4      | [CSS Flexbox](https://shubham06.hashnode.dev/css-flexbox)                                   |
 | 5      | [CSS Media Queries](https://shubham06.hashnode.dev/css-media-query)                         |
+| 6      | [JavaScript Array Methods](https://shubham06.hashnode.dev/array-methods-in-javascript)      |
