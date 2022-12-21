@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 /*--------------------- utility classes -----------------*/
@@ -41,7 +42,19 @@
 .blue-word {
   color: #0c8bfd;
 }
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
 
+.grid {
+  display: grid;
+}
 /*------------- nav bar------------------------------------ */
 .navbar {
   background-color: #111010;
@@ -75,12 +88,13 @@
 }
 .main-heading {
   color: #fff;
-  font-size: 60px;
+  font-size: 65px;
   margin-bottom: 20px;
 }
 .text {
   color: #656363;
-  margin: 30px 175px 60px 0;
+  margin: 30px 110px 60px 0;
+  font-size: 18px;
 }
 .btn-group {
   gap: 40px;
@@ -94,4 +108,109 @@
   justify-content: space-around;
   padding: 45px 0;
   flex-wrap: wrap;
+}
+
+/* -----------services section-------------------------------- */
+.service-section {
+  padding: 80px 0;
+}
+.heading2 {
+  font-size: 35px;
+  margin: 50px 0;
+}
+
+.secondary-heading {
+  font-weight: 600;
+}
+
+.text-2 {
+  color: #797777;
+  /* margin: 30px 175px 60px 0; */
+  margin: 0 335px;
+  font-size: 18px;
+}
+
+.mid-services {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 100px 0;
+}
+
+.service-card {
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bfbebe;
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  background-color: #111010;
+  transform: translate(0, -40px);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: -1px 1px 50px rgba(7, 7, 7, 0.4);
+}
+
+.space-around-word {
+  padding: 0 40px;
+}
+
+.card-text {
+  margin-bottom: 30px;
+}
+
+/* bottom services section */
+.bottom-services {
+  gap: 30px;
+}
+.bottom-left {
+  width: 60%;
+  flex-direction: column;
+  gap: 20px;
+}
+.bottom-right {
+  width: 40%;
+  border-radius: 30px;
+  background-color: #111010;
+  color: #fff;
+  padding: 30px 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.items-left-1 {
+  background-color: #0c8bfd;
+  color: #fff;
+}
+.items-left:hover {
+  background-color: #0c8bfd;
+  color: #fff;
+  cursor: pointer;
+}
+.items-left {
+  justify-content: space-between;
+  padding: 40px 30px;
+  border-radius: 70px;
+  border: 1px solid #cfcfcf;
+}
+.items-right {
+  padding: 20px;
+  gap: 20px;
+  border-radius: 50px;
+  background-color: #292828;
+  align-items: center;
 }
