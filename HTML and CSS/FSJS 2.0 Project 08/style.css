@@ -29,6 +29,10 @@
   color: #0c8bfd;
   background-color: #fff;
 }
+.btn-white:hover {
+  color: #0c8bfd;
+  background-color: rgb(202, 198, 198);
+}
 .btn-primary:hover {
   background-color: #035dac;
   cursor: pointer;
@@ -315,3 +319,66 @@ hr {
 /* .price-cards:hover {
   fill: white;
 } */
+
+/* -------------- review section------------------------------- */
+.review-section {
+  padding: 100px 0;
+}
+.top-review {
+  gap: 230px;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.top-review h1 {
+  font-size: 60px;
+  width: 50%;
+  font-weight: 500;
+}
+.top-review p {
+  width: 50%;
+  color: #b1b0b0;
+}
+
+.bottom-review {
+  gap: 50px;
+}
+.review-card {
+  width: 50%;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #111010;
+  padding: 40px;
+  border-radius: 20px;
+}
+.review-card:nth-child(odd) {
+  background-color: #111010;
+  color: #fff;
+}
+
+.card-name {
+  font-size: 20px;
+}
+
+/* star icons */
+.star-icons {
+  gap: 10px;
+}
+
+/* line  */
+.line {
+  height: 10px;
+  width: 100%;
+  background-color: #b0adad7a;
+  border-radius: 2rem;
+  position: relative;
+  margin: 80px 0;
+}
+
+.line-blue {
+  background-color: #0c8bfd;
+  border: 5px solid #0c8bfd;
+  width: 15%;
+  border-radius: 2rem;
+  position: absolute;
+}
