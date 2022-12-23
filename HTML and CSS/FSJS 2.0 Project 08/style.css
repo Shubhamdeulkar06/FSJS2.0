@@ -322,7 +322,7 @@ hr {
 
 /* -------------- review section------------------------------- */
 .review-section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .top-review {
   gap: 230px;
@@ -347,13 +347,14 @@ hr {
   width: 50%;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid #111010;
+  border: 1px solid #b1b0b0;
   padding: 40px;
   border-radius: 20px;
 }
 .review-card:nth-child(odd) {
   background-color: #111010;
   color: #fff;
+  border-color: #b1b0b0;
 }
 
 .card-name {
@@ -375,7 +376,7 @@ hr {
   margin: 80px 0;
 }
 
-.line-blue {
+.blue-line {
   background-color: #0c8bfd;
   border: 5px solid #0c8bfd;
   width: 15%;
