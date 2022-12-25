@@ -6,6 +6,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  list-style-type: none;
 }
 
 /*--------------------- utility classes -----------------*/
@@ -16,6 +17,11 @@
 .btn-large {
   padding: 10px 100px;
   border-radius: 20px;
+}
+.btn-big {
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
 }
 .btn {
   padding: 10px 30px;
@@ -382,4 +388,56 @@ hr {
   width: 15%;
   border-radius: 2rem;
   position: absolute;
+}
+
+/* --------------signup section ------------------------------------------ */
+.signup-section {
+  background-color: #111010;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.signup-form {
+  margin: 80px 0;
+  border-radius: 30px;
+  background-color: #292828;
+  padding: 60px 10px;
+}
+
+.form-control {
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  border-radius: 30px;
+  padding: 20px 35px;
+  font-size: 1rem;
+  background-color: #3e3d3d;
+  border: none;
+}
+
+.sub-footer {
+  border-top: 2px solid #4c4b4b;
+  border-bottom: 2px solid #4c4b4b;
+  padding: 70px 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-items {
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.item-links {
+  color: #cdcccc;
+}
+
+.item-heading {
+  font-size: 18px;
+  margin: 30px 0;
 }
