@@ -390,7 +390,7 @@ hr {
   position: absolute;
 }
 
-/* --------------signup section ------------------------------------------ */
+/* --------------signup section and footer ------------------------------------------ */
 .signup-section {
   background-color: #111010;
   color: #fff;
@@ -417,6 +417,7 @@ input {
   border: none;
 }
 
+/* footer */
 .sub-footer {
   border-top: 2px solid #4c4b4b;
   border-bottom: 2px solid #4c4b4b;
