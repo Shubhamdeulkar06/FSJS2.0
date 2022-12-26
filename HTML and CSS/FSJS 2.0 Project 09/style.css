@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* deafult 0 */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*--------------------- utility classes -----------------*/
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+.btn {
+  padding: 10px 30px;
+  color: #fff;
+}
+.btn-text:hover {
+  color: #f4694c;
+}
+.btn-outline {
+  border: 1px solid #fff;
+  /* border-style: none; */
+}
+.btn-outline:hover {
+  border: 1px solid #f4694c;
+}
+.btn-orange {
+  background-color: #f4694c;
+}
+.btn-orange:hover {
+  background-color: #c1533c;
+}
+
+.flex {
+  display: flex;
+}
+
+.blue-word {
+  color: #0c8bfd;
+}
+.center {
+  text-align: center;
+}
+.item-center {
+  margin-inline: auto;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+
+.grid {
+  display: grid;
+}
+
+.center-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 13px;
+  color: #cfcdce;
+}
+.text p {
+  padding: 20px 120px 20px 0;
+}
+
+/* headings */
+.heading {
+  font-size: 50px;
+}
+.heading2 {
+  font-size: 35px;
+}
+/* -------------------header section ------------------------------*/
+.header-section {
+  background-image: url(./Assets/Photos/futuristic-bg.png);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+/*------------- nav bar------------------------------------ */
+.navbar {
+  background-color: #111010;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 30px 0;
+}
+.main-logo {
+  cursor: pointer;
+}
+.nav-left {
+  align-items: center;
+  gap: 100px;
+}
+
+/* -----nav links --------*/
+.list {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+  font-size: 14px;
+  color: #cfcdce;
+}
+.list-item:hover {
+  color: #f4694c;
+  cursor: pointer;
+}
+
+/* main section */
+.btn-group {
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.main-container {
+  color: #fff;
+  margin: 100px 0 30px 0;
+  /* justify-content: space-between; */
+  gap: 70px;
+}
+
+.left-main {
+  width: 50%;
+}
+.right-main {
+  width: 50%;
+
+  justify-content: space-around;
+  /* align-content: center; */
+  /* align-self: center; */
+  flex-direction: column;
+}
+
+.title {
+  /* align-items: flex-start; */
+  font-size: 25px;
+  gap: 10px;
+  margin-left: 106px;
+}
+.title p {
+  padding-right: 80px;
+}
+.dash {
+  position: relative;
+  bottom: 40px;
+  right: 20px;
+}
+.play-img {
+  align-self: center;
+}
+
+.right-bottom {
+  align-items: flex-end;
+}
+
+/*------------------- games-section ----------------*/
+.games-section {
+  background-color: #fff;
+}
+
+.game-heading {
+  color: #000;
+  padding: 0 300px;
+  margin: 200px 0 50px;
+}
+
+.game-cards-container {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.game-cards img {
+  width: 300px;
+  height: 300px;
+}
