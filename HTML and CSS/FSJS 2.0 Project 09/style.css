@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
 }
 
 /*--------------------- utility classes -----------------*/
@@ -19,8 +23,21 @@
   padding: 10px 30px;
   color: #fff;
 }
+.btn-small {
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 14px;
+}
 .btn-text:hover {
   color: #f4694c;
+}
+.btn-orange-outline {
+  border: 1px solid #f4694c;
+  color: #f4694c;
+}
+.btn-orange-outline:hover {
+  border: 1px solid #c1533c;
+  color: #c1533c;
 }
 .btn-outline {
   border: 1px solid #fff;
@@ -180,11 +197,75 @@
 }
 
 .game-cards-container {
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
   gap: 20px;
 }
 
-.game-cards img {
-  width: 300px;
-  height: 300px;
+.game-icons {
+  /* width: 305px; */
+  height: 345px;
+  background-size: cover;
+}
+.game-icon1 {
+  background-image: url(./Assets/Photos/image\ 2.png);
+  background-position-y: 0px;
+  background-position-x: -220px;
+}
+.game-icon2 {
+  background-image: url(./Assets/Photos/image\ 3.png);
+  background-position: center;
+}
+.game-icon3 {
+  background-image: url(./Assets/Photos/image\ 4.png);
+  background-position: center;
+}
+.game-icon4 {
+  background-image: url(./Assets/Photos/Rectangle\ 56.png);
+  background-position: center;
+}
+
+.blur-box {
+  gap: 35px;
+  align-items: center;
+  position: relative;
+  bottom: 92px;
+  padding: 10px;
+  color: #fff;
+  backdrop-filter: blur(1rem);
+}
+
+.game-type {
+  font-size: 14px;
+  color: #969591;
+}
+
+/* game deatail section */
+.game-deatis-section {
+  margin: 100px 0;
+  gap: 100px;
+}
+.game-deatils-left {
+  width: 40%;
+}
+.game-deatils-right {
+  width: 60%;
+}
+.game-deatils-left {
+  background-image: url(./Assets/Photos/Rectangle\ 57.png);
+  background-position: center;
+  background-size: cover;
+  /* width: 100%;
+  height: 100%; */
+  /* height: 400px;*/
+  /* width: 400px; */
+}
+
+.heading-control {
+  margin-right: 145px;
+  font-size: 37px;
+}
+
+.text2 {
+  font-size: 13px;
+  color: #928c8f;
 }
