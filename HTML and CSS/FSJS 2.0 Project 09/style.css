@@ -19,6 +19,9 @@ body {
   margin-inline: auto;
 }
 
+.orange-word {
+  color: #f4694c;
+}
 .btn {
   padding: 10px 30px;
   color: #fff;
@@ -188,6 +191,7 @@ body {
 /*------------------- games-section ----------------*/
 .games-section {
   background-color: #fff;
+  padding-bottom: 100px;
 }
 
 .game-heading {
@@ -254,18 +258,59 @@ body {
   background-image: url(./Assets/Photos/Rectangle\ 57.png);
   background-position: center;
   background-size: cover;
-  /* width: 100%;
-  height: 100%; */
-  /* height: 400px;*/
-  /* width: 400px; */
 }
 
 .heading-control {
-  margin-right: 145px;
-  font-size: 37px;
+  margin-right: 130px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .text2 {
   font-size: 13px;
   color: #928c8f;
+  margin-right: 195px;
+  line-height: 22px;
+  margin-bottom: 35px;
+}
+
+/* weekly game section */
+.box-btn {
+  padding: 20px;
+  margin: 5px;
+}
+.clr-orange {
+  background-color: #f4694c;
+}
+.clr-light-orange {
+  background-color: #fde1db;
+}
+
+/* weekly game header */
+.weekly-games-header {
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.weekly-games-left {
+  font-size: 28px;
+  width: 45%;
+}
+
+/* weekly game main container */
+.weekly-games-main {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.weekly-games-main img {
+  width: 230px;
+}
+.weekly-cards {
+  gap: 30px;
+}
+
+.game-content {
+  flex-direction: column;
+  justify-content: space-around;
 }
