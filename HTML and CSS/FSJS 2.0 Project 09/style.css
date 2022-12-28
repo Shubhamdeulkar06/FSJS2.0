@@ -269,8 +269,8 @@ body {
 .text2 {
   font-size: 13px;
   color: #928c8f;
-  margin-right: 195px;
   line-height: 22px;
+  margin-right: 195px;
   margin-bottom: 35px;
 }
 
@@ -313,4 +313,10 @@ body {
 .game-content {
   flex-direction: column;
   justify-content: space-around;
+}
+
+.game-content p {
+  font-size: 13px;
+  color: #928c8f;
+  line-height: 22px;
 }
