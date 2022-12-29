@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style-type: none;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 body {
   overflow-x: hidden;
@@ -106,7 +106,7 @@ body {
   background-image: url(./Assets/Photos/futuristic-bg.png);
   height: 100vh;
   width: 100vw;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 /*------------- nav bar------------------------------------ */
@@ -204,7 +204,12 @@ body {
   /* grid-template-columns: repeat(4, 1fr); */
   gap: 20px;
 }
-
+.game-cards {
+  transition: all 0.3s;
+}
+.game-cards:hover {
+  scale: 1.1;
+}
 .game-icons {
   /* width: 305px; */
   height: 345px;
@@ -338,11 +343,15 @@ body {
 }
 .most-played-mid-left {
   width: 40%;
+  position: relative;
+  z-index: 2;
 }
 .most-played-mid-right {
   width: 60;
   gap: 80px;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 .most-played-mid-right p {
   margin-top: 80px;
@@ -366,14 +375,80 @@ body {
   gap: 40px;
   align-items: flex-end;
 }
-
+.game-tag {
+  position: absolute;
+  right: 8px;
+  top: 180px;
+  z-index: -1;
+}
 .most-played-bottom {
   margin-top: 100px;
   background-image: url(./Assets/Photos/Rectangle\ 606.png);
-  height: auto;
-  /* backdrop-filter: blur(1rem); */
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* opacity: 0.6; */
+  background-color: #080808c0;
+  background-blend-mode: darken;
+  padding: 6em 4em;
+  gap: 40px;
+}
+
+.most-played-bottom-heading {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 135px;
+}
+
+.most-played-bottom-text {
+  font-size: 13px;
+  color: #928c8f;
+  line-height: 22px;
+  margin: 0 350px;
+  text-align: center;
+}
+
+/* footer section*/
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+.sub-footer {
+  padding: 70px 30px;
+  justify-content: space-between;
+}
+
+.footer-items {
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer-links p {
+  font-size: 13px;
+  text-align: left;
+  margin: 20px 0;
+  color: #928c8f;
+}
+.item-links {
+  color: #928c8f;
+  font-size: 13px;
+}
+.item-links:hover {
+  color: #f4694c;
+}
+
+.social-icons img {
+  margin: 0 2px;
+  transition: all 0.3s;
+}
+.social-icons img:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
