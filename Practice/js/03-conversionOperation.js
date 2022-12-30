@@ -7,3 +7,7 @@ let valueInString = String(score);
 
 console.log(valueInNumber, valueInString);
 console.log(typeof valueInNumber, typeof valueInString);
+
+// comments in js             => single line comment
+/*multi line 
+comments*/ //            =>multiline comments
