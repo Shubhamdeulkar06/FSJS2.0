@@ -3,6 +3,7 @@ let score = "33";
 console.log(typeof score);
 
 let valueInNumber = Number(score);
+let valueInString = String(score);
 
-console.log(valueInNumber);
-console.log(valueInNumber);
+console.log(valueInNumber, valueInString);
+console.log(typeof valueInNumber, typeof valueInString);
