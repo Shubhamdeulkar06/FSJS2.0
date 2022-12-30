@@ -34,9 +34,11 @@ body {
   border-radius: 30px;
 }
 .btn-small {
-  padding: 8px 15px;
+  padding: 15px 20px;
   color: #fff;
   font-size: 14px;
+  font-weight: bold;
+  border-radius: 30px;
 }
 
 .flex {
@@ -145,9 +147,111 @@ nav {
   margin-inline: 305px;
 }
 
-.items img {
-  width: 30%;
+.items {
+  width: 31%;
+  height: 445px;
+  border-radius: 30px;
+  position: relative;
+  flex-grow: 1;
+  margin: 50px 0;
+  transition: all 0.3s;
 }
+.items:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+.item1 {
+  background-image: url(./assets/Photos/cardImage1.png);
+  background-position-y: 0px;
+  background-position-x: -193px;
+  background-size: cover;
+  align-self: start;
+}
+.item2 {
+  background-image: url(./assets/Photos/cardImage2.png);
+  background-position-y: 0px;
+  background-position-x: -34px;
+  background-size: cover;
+  align-self: center;
+}
+.item3 {
+  background-image: url(./assets/Photos/cardImage3.png);
+  background-position-y: 0px;
+  background-position-x: -193px;
+  background-size: cover;
+  align-self: end;
+}
+.item4 {
+  background-image: url(./assets/Photos/cardImage4.png);
+  background-position-y: 0px;
+  background-position-x: -193px;
+  background-size: cover;
+  align-self: end;
+}
+.item5 {
+  background-image: url(./assets/Photos/cardImage5.png);
+  background-position-y: 0px;
+  background-position-x: -193px;
+  background-size: cover;
+  align-self: center;
+}
+.item6 {
+  background-image: url(./assets/Photos/cardImage6.png);
+  background-position-y: 0px;
+  background-position-x: -193px;
+  background-size: cover;
+  align-self: start;
+}
+.item7 {
+  background-image: url(./assets/Photos/cardImage7.png);
+  background-position-y: 0px;
+  background-position-x: -193px;
+  background-size: cover;
+  align-self: start;
+}
+.item8 {
+  background-image: url(./assets/Photos/cardImage8.png);
+  background-position-y: 0px;
+  background-position-x: -22px;
+  background-size: cover;
+  align-self: center;
+}
+.item9 {
+  background-image: url(./assets/Photos/cardImage9.png);
+  background-position-y: 0px;
+  background-position-x: -286px;
+  background-size: cover;
+  align-self: end;
+}
+
 .cards-main {
-  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 30px;
+  height: 260vh;
+  margin: 55px 0 100px 0;
+  flex-wrap: wrap;
+}
+
+.card-deatils {
+  background-color: #fff;
+  margin-inline: 20px;
+  border-radius: 15px;
+  padding: 26px 35px;
+  align-items: center;
+  position: absolute;
+  top: 376px;
+  gap: 45px;
+}
+
+.card-deatils-left p {
+  font-size: 21px;
+  font-weight: bold;
+  /* margin: 5px 0; */
+  padding: 10px;
+}
+
+.purple-word {
+  font-size: 18px;
+  color: #6663e9;
+  font-weight: 600;
+  padding: 10px;
 }
