@@ -33,6 +33,22 @@ body {
   color: #fff;
   border-radius: 30px;
 }
+.btn-white {
+  background-color: #fff;
+  color: #6663e9;
+  font-weight: bold;
+  border: 1px solid #6663e9;
+}
+.btn-white:hover {
+  color: #fff;
+  background-color: #6663e9;
+  border: 1px solid #fff;
+}
+.btn-white {
+  background-color: #fff;
+  color: #6663e9;
+  font-weight: bold;
+}
 .btn-small {
   padding: 15px 20px;
   color: #fff;
@@ -298,11 +314,109 @@ nav {
 }
 .features-right {
   flex-direction: column;
-  gap: 50px;
+  gap: 80px;
   /* align-items: center; */
   justify-content: center;
   width: 50%;
 }
 .features-right h1 {
   font-size: 50px;
+}
+
+/*----------------------------- newsletter section ---------------------------*/
+.newsletter {
+  background-color: #6663e9;
+  color: #fff;
+  border-radius: 30px;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 40px;
+}
+.newsletter h1 {
+  font-size: 55px;
+  margin: 20px 108px;
+}
+.newsletter p {
+  margin: 0px 230px;
+}
+.inputs {
+  gap: 30px;
+  align-items: center;
+}
+
+.email-input {
+  padding: 20px 40px;
+  background-color: #5654d1;
+  border-radius: 30px;
+  gap: 20px;
+}
+
+.email-input input {
+  width: 300px;
+  background-color: #5654d1;
+  border: none;
+  color: #fff;
+}
+
+.email-input input:focus-visible {
+  outline: none;
+}
+
+.email-input input::placeholder {
+  color: #8281dd;
+}
+
+/* ----------------------------footer section------------------ */
+footer {
+  margin: 100px 0;
+}
+.footer-section {
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex-direction: column;
+  gap: 30px;
+  width: 30%;
+}
+.footer-left p {
+  font-size: 20px;
+}
+
+.footer-right {
+  /* justify-content: space-between; */
+  gap: 100px;
+}
+/* footer */
+.item-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-items {
+  flex-direction: column;
+  gap: 20px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.item-links {
+  color: #928c8f;
+  font-size: 16px;
+}
+.item-links:hover {
+  color: #6663e9;
+}
+
+.social-icons img {
+  margin: 0 2px;
+  transition: all 0.3s;
+}
+.social-icons img:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
