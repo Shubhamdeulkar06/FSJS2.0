@@ -255,3 +255,54 @@ nav {
   font-weight: 600;
   padding: 10px;
 }
+
+/*---------------------------- features section-------------------- */
+.features {
+  gap: 150px;
+  margin-bottom: 200px;
+}
+.features-img {
+  width: 50%;
+  height: 500px;
+  border-radius: 30px;
+  position: relative;
+  flex-grow: 1;
+  margin: 50px 0;
+  transition: all 0.3s;
+  position: relative;
+}
+.feature-img1 {
+  background-image: url(./assets/Photos/featuresImage1.png);
+  background-position: center;
+  background-size: cover;
+}
+.feature-img2 {
+  background-image: url(./assets/Photos/featuresImage2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.feature-img1 img {
+  position: absolute;
+  left: -143px;
+  bottom: -138px;
+  width: 139%;
+  z-index: -1;
+}
+.feature-img2 img {
+  position: absolute;
+  right: -143px;
+  bottom: -138px;
+  width: 139%;
+  z-index: -1;
+}
+.features-right {
+  flex-direction: column;
+  gap: 50px;
+  /* align-items: center; */
+  justify-content: center;
+  width: 50%;
+}
+.features-right h1 {
+  font-size: 50px;
+}
