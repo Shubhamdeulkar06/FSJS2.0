@@ -10,10 +10,11 @@
 </head>
 
 <body>
-
-  <!-- header section -->
-  <header>
-    <div class="container">
+  <!-- common container -->
+  <div class="container">
+    <!-- header section -->
+    <header>
+      <!-- nav bar -->
       <nav class="flex">
         <div class="logo nav-left">
           <img src="./Photos/beatsLogo.png" alt="logo">
@@ -33,7 +34,6 @@
       <div class="header-content flex">
         <div class="header-left">
           <img class="main-img" src="./Photos/mainImage.png" alt="">
-
         </div>
         <div class="header-right">
           <img class="onear-img" src="./Photos/onEar.png" alt="">
@@ -42,15 +42,118 @@
           <p>Enjoy award-winning Beats sound with wireless
             listening freedom and a sleek, streamlined design
             with comfortable padded earphones, delivering
-            first-rate playback.</p>
-          <button class="btn btn-main flex"><img src="./Icons/shoppingBag.png" alt=""> Add to Bag <span
-              class="single-word">
-              N399K</span></button>
-
+            first-rate playback.
+          </p>
+          <button class="btn btn-main flex">
+            <img src="./Icons/shoppingBag.png" alt=""> Add to Bag <span class="single-word"> N399K</span>
+          </button>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <!-- logo section -->
+    <section class="logo-section">
+      <div class="logos flex">
+        <img src="./Photos/appleLogo.png" alt="apple logo">
+        <img src="./Photos/spotifyLogo.png" alt="spotifyLogo">
+        <img src="./Photos/amazonLogo.png" alt="amazon logo">
+        <img src="./Photos/youtubeLogo.png" alt="youtube logo">
+      </div>
+    </section>
+    <!-- specs section -->
+    <section class="specs-section">
+      <div class="specs">
+        <div class="specs-heading center">
+          <img src="./Icons/specsLogo.png" alt="specs logo">
+        </div>
+        <div class="specs-content  flex">
+          <div class="specs-content-left flex">
+            <!-- bluetooth -->
+            <div class="icon-group icon-group1">
+              <div>
+                <img src="./Icons/bluetooth.png" alt="bluetooth">
+              </div>
+              <p class="specs-p">Connection</p>
+              <span class="specs-bullet">Bluetooth v5.2</span>
+            </div>
+            <!-- battery -->
+            <div class="icon-group icon-group2">
+              <div>
+                <img src="./Icons/battery.png" alt="battery">
+              </div>
+              <p class="specs-p">Battery</p>
+              <span class="specs-bullet">Duration 40h</span>
+            </div>
+            <!-- load -->
+            <div class="icon-group icon-group3">
+              <div>
+                <img src="./Icons/charger.png" alt="charger">
+              </div>
+              <p class="specs-p">Load</p>
+              <span class="specs-bullet">Fast charge 4.2-AAC</span>
+            </div>
+            <!-- microphone -->
+            <div class="icon-group icon-group4">
+              <div>
+                <img src="./Icons/mic.png" alt="mic">
+              </div>
+              <p class="specs-p">Microphone</p>
+              <span class="specs-bullet">Supports Apple Siri</span>
+              <br>
+              <span class="specs-bullet"> and Google</span>
+            </div>
+          </div>
+          <div class="specs-content-right">
+            <img src="./Photos/specsImage.png" alt="specs img">
+          </div>
+        </div>
+      </div>
+      <!-- case section -->
+      <div class="case">
+        <div class="case-heading center">
+          <img src="./Icons/caseLogo.png" alt="case logo">
+        </div>
+        <div class="specs-content  flex">
+          <div class="case-content-left flex">
+
+            <img src="./Photos/caseImage.png" alt="case img">
+          </div>
+          <div class="case-content-right">
+            <p>With a comfortable and
+              adaptable case so that you
+              can store it whenever you
+              want, and keep your durability
+              forever.
+            </p>
+            <button class="btn-small btn-main flex">
+              <img src="./Icons/group.png" alt=""> More info
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- buy now section -->
+    <section class="buy-now-section">
+
+      <div class="buy-now flex">
+        <div class="buy-now-left">
+          <h2>Immerse yourself in
+            your music
+          </h2>
+          <p>Buy Now, up to 40% off.</p>
+          <button class="btn-small btn-black flex">
+            <img src="./Icons/shoppingBag.png" alt=""> Buy Now
+          </button>
+        </div>
+        <div class="buy-now-right">
+          <img src="./Photos/buyNowSectionImage.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
 </body>
 
 </html>

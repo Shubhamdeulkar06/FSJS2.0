@@ -28,6 +28,16 @@ body {
   cursor: pointer;
 }
 
+.btn-black {
+  background-color: #0f0f10;
+  cursor: pointer;
+  border: 1px solid #0f0f10;
+}
+.btn-black:hover {
+  background-color: #1e1e21;
+  cursor: pointer;
+  border: 1px solid #0f0f10;
+}
 .btn {
   padding: 20px 60px;
   color: #fff;
@@ -37,9 +47,7 @@ body {
 .btn-small {
   padding: 15px 20px;
   color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 30px;
+  border-radius: 7px;
 }
 
 .flex {
@@ -115,6 +123,9 @@ ul li:hover {
 .onear-img {
   margin-left: 80px;
 }
+.header-content {
+  height: 37rem;
+}
 .header-right {
   width: 61%;
   color: #fff;
@@ -134,4 +145,84 @@ ul li:hover {
 button.flex {
   gap: 20px;
   align-items: center;
+}
+
+/* ---------------logo section---------------------------- */
+.logos {
+  margin: 0 0 100px 0;
+  justify-content: space-evenly;
+}
+
+/* ---------------specs section---------------------------- */
+.specs-content {
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 80px 0 160px 0;
+  color: #fff;
+}
+.specs-content-left {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-group1,
+.icon-group4 {
+  align-self: flex-end;
+}
+.icon-group2,
+.icon-group3 {
+  align-self: flex-start;
+}
+
+.specs-bullet {
+  font-size: 13px;
+  color: #4a4b4c;
+}
+
+.specs-p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* case section */
+.case-content-right {
+  width: 20%;
+}
+.case-content-right p {
+  line-height: 30px;
+  margin-bottom: 50px;
+  /* margin-right: 10px; */
+  color: #4a4b4c;
+  font-size: 18px;
+}
+
+/* buy-now section---------------- */
+
+.buy-now {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+  background-color: #181a1b;
+  margin-left: 80px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.buy-now-left {
+  width: 30%;
+}
+.buy-now-left h2 {
+  line-height: 40px;
+  margin: 20px 0;
+}
+.buy-now-left p {
+  line-height: 40px;
+  margin: 20px 0;
+  color: #848586;
 }
