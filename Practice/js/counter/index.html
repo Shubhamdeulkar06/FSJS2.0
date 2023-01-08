@@ -6,17 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Counter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Counter: <span id="counter">0</span></h1>
+  <div class="container">
+    <h1>Counter: <span id="counter">0</span></h1>
+    <div class="btn-group">
+      <button id="increment">Increment</button>
+      <button id="decrement">Decrement</button>
+    </div>
+    <div class="lists">
+      <ul id="list-items">
 
-  <button id="increment">Increment</button>
-  <button id="decrement">Decrement</button>
+      </ul>
 
-  <ul class="list-items">
+    </div>
 
-  </ul>
+  </div>
   <script src="./counter.js"></script>
 </body>
 
