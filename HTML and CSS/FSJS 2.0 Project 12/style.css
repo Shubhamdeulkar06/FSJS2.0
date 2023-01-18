@@ -88,6 +88,7 @@
 }
 .p-text {
   color: #919396;
+  line-height: 25px;
 }
 /* -----------------header section--------------------- */
 nav {
@@ -180,14 +181,15 @@ header {
 .why-qubly-p {
   padding: 0 190px;
 }
-.why-qubly-eye {
-  padding: 10px 10px;
-  border-radius: 20px;
+.batch {
+  padding: 10px 12px;
+  border-radius: 30px;
   background-color: #e8d9fa;
   gap: 10px;
   /* width: 41%; */
   color: #8043d6;
   font-weight: bold;
+  align-items: center;
 }
 
 .qubly-features {
@@ -211,4 +213,80 @@ header {
   line-height: 25px;
 }
 
-/* ----------------------------Product team section------------------- */
+/* ---------------------------- team section------------------- */
+.product-team-section {
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 120px 0;
+}
+
+.product-team-right,
+.engineering-team-left {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-team-right div h2,
+.engineering-team-left div h2 {
+  font-size: 30px;
+}
+.product-batch {
+  width: 50%;
+}
+.engineer-batch {
+  width: 57%;
+}
+
+.engineering-team-section {
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 0 120px 0; */
+}
+.engineering-team-right {
+  width: 40%;
+}
+
+/* --------------- cto section------------------------- */
+.cto-section {
+  background: linear-gradient(
+    175deg,
+    #ffffff 20%,
+    #e5d6f0 20%,
+    #e5d6f0,
+    #e4f2ff,
+    #e4f2ff 90%,
+    #e4f2ff 90%
+  );
+
+  padding-top: 10.5%;
+}
+.cto-message {
+  font-size: 25px;
+  margin: 25px 140px;
+  font-weight: 600;
+}
+
+.cto-info {
+  margin: 25px 0;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.divider {
+  background-color: #e8d9fa;
+  width: 90%;
+  height: 2px;
+  margin: 30px 0;
+  margin-inline: auto;
+}
+
+.logo-section {
+  justify-content: space-evenly;
+}
+
+.sign-up-section {
+  background: linear-gradient(175deg, #e4f2ff 20%, #ffffff 20%);
+  padding-top: 13%;
+  padding-bottom: 5%;
+}
