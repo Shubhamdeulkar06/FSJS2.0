@@ -6,6 +6,8 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
+  outline: none;
+  transition: all 0.3s;
 }
 
 /*----------------------- utilities -----------------------*/
@@ -15,21 +17,43 @@
 }
 
 /* buttons */
+.btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .btn-main {
   background-color: #fff;
-  /* font-weight: bold; */
+  border: 1px solid #8043d6;
+  color: #8043d6;
+}
+.btn-main:hover {
+  background-color: #722ed1;
+  color: #fff;
+}
+.btn-purple {
+  background-color: #722ed1;
+  color: #fff;
+}
+.btn-purple:hover {
+  background-color: #fff;
+  color: #722ed1;
+  border: 1px solid #8043d6;
+}
+.btn-white {
+  background-color: #fff;
+  color: #722ed1;
+}
+.btn-white:hover {
   border: 1px solid #8043d6;
 }
 /* .btn-main:hover {
   background-color: #0f0f10;
   cursor: pointer;
 } */
-
-.btn {
-  padding: 15px 40px;
-  color: #8043d6;
-  border-radius: 20px;
-}
 
 .flex {
   display: flex;
@@ -62,7 +86,9 @@
   font-size: 20px;
   font-weight: bold;
 }
-
+.p-text {
+  color: #919396;
+}
 /* -----------------header section--------------------- */
 nav {
   padding: 50px 0;
@@ -94,5 +120,95 @@ ul .nav-links:hover {
 }
 
 header {
-  background: linear-gradient(175deg, #f4f8ff 5%, #e4f2ff 90%, #f4f8ff 10%);
+  background: linear-gradient(175deg, #f4f8ff 5%, #e4f2ff 80%, #fff 30%);
+  height: 100vh;
 }
+
+.header-left {
+  width: 50;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-content {
+  grid-template-columns: 1fr 1fr;
+  margin: 80px 0;
+}
+
+.header-left-version {
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: #e8d9fa;
+  gap: 10px;
+  width: 41%;
+  color: #8043d6;
+  font-weight: bold;
+}
+.header-left-version a {
+  color: #8043d6;
+  text-decoration: underline;
+}
+.header-left-heading h1 {
+  font-size: 50px;
+  width: 75%;
+}
+
+.header-left-p {
+  width: 77%;
+  line-height: 25px;
+  font-size: 17px;
+}
+
+.header-left-btn {
+  gap: 20px;
+}
+
+/* -----------why qubly section---------------- */
+.why-qubly-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* width: 70%; */
+  text-align: center;
+  padding: 10px 100px;
+}
+
+.why-qubly-container h2 {
+  font-size: 32px;
+}
+.why-qubly-p {
+  padding: 0 190px;
+}
+.why-qubly-eye {
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: #e8d9fa;
+  gap: 10px;
+  /* width: 41%; */
+  color: #8043d6;
+  font-weight: bold;
+}
+
+.qubly-features {
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 20px;
+  /* gap: 40px; */
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.features div p {
+  padding: 0 60px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* ----------------------------Product team section------------------- */
