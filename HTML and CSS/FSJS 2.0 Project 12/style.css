@@ -10,6 +10,9 @@
   transition: all 0.3s;
 }
 
+body {
+  overflow-x: hidden;
+}
 /*----------------------- utilities -----------------------*/
 .container {
   max-width: 1200px;
@@ -50,10 +53,10 @@
 .btn-white:hover {
   border: 1px solid #8043d6;
 }
-/* .btn-main:hover {
-  background-color: #0f0f10;
-  cursor: pointer;
-} */
+.btn-input {
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
 
 .flex {
   display: flex;
@@ -90,11 +93,15 @@
   color: #919396;
   line-height: 25px;
 }
+.p-bold {
+  font-weight: bold;
+}
 /* -----------------header section--------------------- */
 nav {
   padding: 50px 0;
   justify-content: space-between;
   align-items: center;
+  margin: 0 50px;
 }
 
 .logo {
@@ -106,7 +113,6 @@ nav {
 }
 
 ul {
-  /* color: #fff; */
   gap: 50px;
 }
 
@@ -116,7 +122,6 @@ ul .nav-links {
   padding: 5px;
 }
 ul .nav-links:hover {
-  /* background-color: #1e1e21; */
   color: #8043d6;
 }
 
@@ -126,14 +131,16 @@ header {
 }
 
 .header-left {
-  width: 50;
+  width: 44%;
   flex-direction: column;
   gap: 20px;
 }
 
 .header-content {
-  grid-template-columns: 1fr 1fr;
-  margin: 80px 0;
+  margin: 80px 50px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
 }
 
 .header-left-version {
@@ -141,7 +148,7 @@ header {
   border-radius: 20px;
   background-color: #e8d9fa;
   gap: 10px;
-  width: 41%;
+  width: 51%;
   color: #8043d6;
   font-weight: bold;
 }
@@ -151,11 +158,9 @@ header {
 }
 .header-left-heading h1 {
   font-size: 50px;
-  width: 75%;
 }
 
 .header-left-p {
-  width: 77%;
   line-height: 25px;
   font-size: 17px;
 }
@@ -252,7 +257,7 @@ header {
   background: linear-gradient(#ffffff 20%, #e5d6f0 20%, #e5d6f0, #e4f2ff);
   padding: 9% 0;
   transform: rotate(-6deg);
-  min-width: 120%;
+  min-width: 100%;
   margin: 0 -10% 140px -10%;
 }
 .inner-container {
@@ -284,10 +289,131 @@ header {
 }
 
 /* -------------------signup section---------------------------- */
-/* .sign-up-section {
-  background: linear-gradient(175deg, #e4f2ff 20%, #ffffff 20%);
-  padding-top: 13%;
-  padding-bottom: 5%;
-} */
-/* .signup-container {
-} */
+.sign-up-section {
+  margin: 200px 0 100px 0;
+}
+.signup-container {
+  justify-content: space-evenly;
+  /* align-items: flex-start; */
+  gap: 70px;
+}
+
+.sign-form {
+  flex-direction: column;
+}
+
+.signup-left-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 50px 0;
+}
+
+.sign-up-trusted {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sign-up-trusted div {
+  height: 1.5px;
+  background-color: #bdc0c5;
+  width: 150px;
+}
+
+.sign-up-logo {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+  margin: 50px 0;
+}
+
+.signup-right {
+  background-color: #f9f0ff;
+  padding: 0 40px;
+  position: relative;
+  border-radius: 5px;
+  width: 46%;
+}
+
+.sign-form {
+  background-color: #fff;
+  padding: 30px 50px;
+  gap: 15px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  bottom: 50px;
+}
+
+.sign-form input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #bdc0c5;
+}
+
+.google-btn {
+  width: 60%;
+  align-self: center;
+}
+.google-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.sign-line {
+  height: 1.5px;
+  width: 100%;
+  background-color: #bdc0c5;
+  align-self: center;
+}
+/* ---------------footer section-------------- */
+footer {
+  justify-content: space-evenly;
+}
+
+.footer-list {
+  gap: 50px;
+}
+
+.footer-newsletter div {
+  padding: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  background-color: #fff;
+}
+.footer-newsletter div input {
+  border: none;
+}
+
+.footer-social-logo {
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.list h4 {
+  margin-bottom: 20px;
+}
+
+.list ul li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.list ul li a {
+  color: #000;
+}
+.list ul li a:hover {
+  color: #8043d6;
+}
+
+.footer-social-icon img {
+  margin-right: 10px;
+}
+.footer-social-icon img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.footer-container {
+  padding: 80px 0;
+  background: linear-gradient(#f4f8ff 5%, #e4f2ff 80%);
+}
