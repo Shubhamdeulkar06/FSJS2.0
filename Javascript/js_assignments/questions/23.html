@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    //Q:23. Write a program to check that the number given by the user is a prime number or not.
+
+    const number = parseInt(
+      prompt("Enter a positive number and make sure that it is not 1: ")
+    );
+    let isPrimeNumber = true;
+
+    if (number === 1) {
+      // console.log("1 is neither prime nor composite number.");
+      document.write("1 is neither prime nor composite number.");
+
+    } else if (number > 1) {
+      for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+          isPrimeNumber = false;
+          break;
+        }
+      }
+
+      if (isPrimeNumber) {
+        // console.log(`${number} is a prime number`);
+        document.write(`${number} is a prime number`);
+
+      } else {
+        // console.log(`${number} is a not prime number`);
+        document.write(`${number} is a not prime number`);
+
+      }
+    } else {
+      // console.log("The number is not a prime number.");
+      document.write("The number is not a prime number.");
+    }
+
+  </script>
+</body>
+
+</html>
