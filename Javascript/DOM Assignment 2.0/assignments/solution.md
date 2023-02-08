@@ -140,3 +140,23 @@ accordian.forEach((element) => {
 });
 
 ```
+
+## Assignment 3
+
+![Task 1](./DOM%20Assignment%202.0%201%2C2%2C3/thirdAssignmentImage/task1Output.png)
+
+### Task1 solution
+
+```JavaScript
+// targeting user Output Board
+    let inputs = document.querySelectorAll(".mainLeftDetails input");
+    inputs[0].value = "FSJS 2.0";
+    inputs[1].value = "fsjs@ineuron.ai";
+    document.querySelector(".enterMessage").value = "Hello World";
+    // targeting user Input Board
+    let inputss = document.querySelectorAll(".mainRight form input");
+    inputss[0].value = "FSJS 2.0";
+    inputss[1].value = "fsjs@ineuron.ai";
+    document.querySelector(".userMessage").value = "Hello World";
+
+```
