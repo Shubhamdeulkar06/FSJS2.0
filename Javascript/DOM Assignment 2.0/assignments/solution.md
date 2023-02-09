@@ -2,6 +2,8 @@
 
 ## Assignment 1
 
+### Task1
+
 ![Task 1](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task1Output.png)
 
 ### Task1 solution
@@ -21,6 +23,8 @@ let navUlElement = document.querySelector("nav ul");
 navUlElement.appendChild(liElement);
 ```
 
+### Task2
+
 ![Task 2](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task2Output.png)
 
 ### Task2 solution
@@ -33,6 +37,8 @@ lis[2].innerHTML = "<a>Projects</a>";
 let search = document.querySelector("input");
 search.placeholder = "search My Project";
 ```
+
+### Task3
 
 ![Task 3](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task3Output.png)
 
@@ -47,6 +53,8 @@ let spanElement = document.querySelectorAll(".hero-left-section p span");
 spanElement[2].innerText = "iNeuron Intelligence Pvt Ltd";
 ```
 
+### Task4
+
 ![Task 4](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task4Output.png)
 
 ### Task4 solution
@@ -59,6 +67,8 @@ lis[2].innerHTML = "<a>Projects</a>";
 let imgElement = (document.querySelector(".hero-right-section img").src =
   "./circle.PNG");
 ```
+
+### Task5
 
 ![Task 5](./DOM%20Assignment%202.0%201%2C2%2C3/firstAssignmentImage/task5Output.png)
 
@@ -79,6 +89,8 @@ parent.appendChild(btnElement);
 ```
 
 ## Assignment 2
+
+### Task1
 
 ![Task 1](./DOM%20Assignment%202.0%201%2C2%2C3/secondAssignmentImage/task1Output.png)
 
@@ -105,6 +117,8 @@ accordian.forEach((element) => {
 });
 
 ```
+
+### Task2
 
 ![Task 2](./DOM%20Assignment%202.0%201%2C2%2C3/secondAssignmentImage/task2Output.png)
 
@@ -142,6 +156,8 @@ accordian.forEach((element) => {
 ```
 
 ## Assignment 3
+
+### Task1
 
 ![Task 1](./DOM%20Assignment%202.0%201%2C2%2C3/thirdAssignmentImage/task1Output.png)
 
