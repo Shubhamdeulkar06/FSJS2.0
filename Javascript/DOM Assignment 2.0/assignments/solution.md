@@ -341,3 +341,51 @@ function submitForm(event) {
 
 btnSubmit.addEventListener("click", submitForm);
 ```
+
+## Assignment 8
+
+### Task
+
+![Before](./DOM%20P8/DOM%20P8/ass8.1-before.png)
+![Before](./DOM%20P8/DOM%20P8/ass8.2-before.png)
+![Before](./DOM%20P8/DOM%20P8/ass8.3-before.png)
+![After](./DOM%20P8/DOM%20P8/ass8.1-after.png)
+![After](./DOM%20P8/DOM%20P8/ass8.2-after.png)
+![After](./DOM%20P8/DOM%20P8/ass8.3-after.png)
+
+### Task solution
+
+```JavaScript
+// Task-1 adding scroll and new elements in aside tag
+const asideContainer = document.querySelector("aside");
+asideContainer.style.overflow = "scroll";
+let h2Element = document.createElement("h2");
+let pElement = document.createElement("p");
+let hrElement = document.createElement("hr");
+h2Element.setAttribute("class", "new-head");
+pElement.setAttribute("class", "new-p");
+hrElement.setAttribute("class", "hr-line");
+h2Element.innerText = "This is my Custom Heading";
+pElement.innerText =
+  "Private funding by VC firms is down 50% YOY. We take a look at what that means.";
+asideContainer.appendChild(hrElement);
+asideContainer.appendChild(h2Element);
+asideContainer.appendChild(pElement);
+
+// Task-2 hiding the background image
+document.body.style.backgroundImage = "none";
+
+//Task-3 toggle button to show/ hide menu items
+const toggleNavbar = document.getElementsByClassName("collapse")[0];
+function functionToggle() {
+  toggleNavbar.style.transition = "all 2s";
+  if (toggleNavbar.style.display === "none") {
+    toggleNavbar.style.display = "flex";
+  } else {
+    toggleNavbar.style.display = "none";
+  }
+}
+
+let toggleBtn = document.querySelector("nav button");
+toggleBtn.addEventListener("click", functionToggle);
+```
