@@ -389,3 +389,30 @@ function functionToggle() {
 let toggleBtn = document.querySelector("nav button");
 toggleBtn.addEventListener("click", functionToggle);
 ```
+
+## Assignment 9
+
+### Task
+
+![Before](./DOM%20P9/DOM%20P9/ass9.1-before.png)
+![Before](./DOM%20P9/DOM%20P9/ass9.2-before.png)
+
+![After](./DOM%20P9/DOM%20P9/ass9.1-after.png)
+![After](./DOM%20P9/DOM%20P9/ass9.2-after.png)
+
+### Task solution
+
+```JavaScript
+// task 1 change color of heading
+document.querySelector(".caption h1").style.color = "#dc143c";
+
+//task 2 on mouse enter change the background color
+const btnAddToCart = document.querySelector(".add-to-cart");
+btnAddToCart.addEventListener("mouseenter", () => {
+  btnAddToCart.style.backgroundColor = "#dc143c";
+});
+btnAddToCart.addEventListener("mouseleave", () => {
+  btnAddToCart.style.backgroundColor = "hsl(157, 37%, 20%)";
+});
+
+```
