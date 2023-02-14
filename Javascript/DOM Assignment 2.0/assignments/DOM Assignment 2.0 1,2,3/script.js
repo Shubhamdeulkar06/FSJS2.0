@@ -46,5 +46,3 @@ navUlElement.appendChild(liElement);
 // // appending button to parent element
 // let parent = document.querySelector(".hero-right-section-btns");
 // parent.appendChild(btnElement);
-
-// Assignment 2
