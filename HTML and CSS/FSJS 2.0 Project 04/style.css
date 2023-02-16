@@ -6,22 +6,37 @@
   background: #f9f5ed;
   font-family: "Roboto", sans-serif;
 }
+body {
+  height: 100vh;
+}
 nav {
   padding: 20px 10%;
   height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   display: flex;
   align-items: center;
+  /* justify-content: space-around; */
   /* font-weight: 600; */
+  gap: 100px;
 }
 
 nav ul li {
   list-style: none;
-  margin-right: 5%;
+  /* margin-right: 5%; */
   /* gap: 50px; */
   font-weight: bolder;
+}
+li a {
+  text-decoration: none;
+}
+.bar {
+  display: none;
+  /* font-size: 30px; */
 }
 
 /* CSS for HERO Section */
