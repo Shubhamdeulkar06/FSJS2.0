@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className="text-center ">
-      <h1 className="text-3xl font-bold bg-sky-900 text-white h-20 py-4">
+      <h1 className="text-3xl font-bold bg-[#002c5f] text-white h-20 py-4 mb-28">
         Rock Paper Scissors
       </h1>
       <div>
