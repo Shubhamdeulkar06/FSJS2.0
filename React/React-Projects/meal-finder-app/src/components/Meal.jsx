@@ -48,7 +48,7 @@ const Meal = () => {
         </button>
       </div>
       <div className="container w-[80%] my-0 mx-auto flex justify-around flex-wrap">
-        <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <div className="p-0 md:p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           {myMeal ? (
             myMeal.map((res) => {
               return <Cards data={res} key={res.idMeal} />;
