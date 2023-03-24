@@ -5,13 +5,25 @@ import "./App.css";
 import Cards from "./components/Cards";
 
 function App() {
+  const [text, setText] = useState("");
   const [movie, setMovie] = useState([]);
   const fetchMovies = () => {
     axios
-      .get("http://www.omdbapi.com/?s=pink&apikey=b2ba7cf8")
+      .get(`http://www.omdbapi.com/?s=${text}&apikey=b2ba7cf8`)
       .then((response) => {
         console.log(response);
-        setMovie(response.data.Search);
+        if (text === "") {
+          alert("Please Enter a movie Name");
+        } else if (response.data.Error) {
+          alert("Sorry movie not found");
+          setText("");
+        } else {
+          setMovie(response.data.Search);
+          setText("");
+        }
+      })
+      .catch((err) => {
+        console.log(err.message);
       });
   };
   return (
@@ -37,7 +49,7 @@ function App() {
               </svg>
             </button>
           </div>
-          <ul className="hidden lg:flex lg:items-center lg:justify-end grow mr-4">
+          <ul className=" hidden lg:flex lg:items-center lg:justify-end grow mr-4">
             <li>
               <a
                 className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 px-4 py-2"
@@ -54,41 +66,42 @@ function App() {
                 About
               </a>
             </li>
-            <li>
-              <div className="relative">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-4 h-4 text-gray-500"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
-                </span>
-                <input
-                  type="text"
-                  className="py-2 pl-10 pr-4 text-sm text-gray-700 bg-gray-100 dark:bg-gray-800 rounded-md focus:outline-none focus:bg-white focus:text-gray-900"
-                  placeholder="Search"
-                />
-                <button
-                  onClick={fetchMovies}
-                  className="ml-1 rounded-md bg-indigo-600 px-3.5 py-1 text-sm font-semibold leading-7 text-white hover:bg-indigo-500 "
-                >
-                  Search
-                </button>
-              </div>
-            </li>
           </ul>
         </nav>
       </div>
-
+      <div className="flex justify-center mt-10 p-0 md:p-10 md:mt-0">
+        <div className="relative">
+          <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-4 h-4 text-gray-500"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </span>
+          <input
+            type="text"
+            className="py-2 pl-10 pr-4 text-sm text-gray-700 bg-gray-100 dark:bg-gray-800 rounded-full focus:outline-none focus:bg-white focus:text-gray-900"
+            placeholder="Search"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
+          <button
+            onClick={fetchMovies}
+            className="ml-1 rounded-full bg-indigo-600 px-3.5 py-1 text-sm font-semibold leading-7 text-white hover:bg-indigo-500 "
+          >
+            Search
+          </button>
+        </div>
+      </div>
       <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5">
         {movie.map((value, index) => {
           return (
