@@ -24,10 +24,9 @@ const Cards = (getMovie) => {
               {getMovie.data.Title}
             </h1>
             <p className="text-gray-300 mt-2">{getMovie.data.Year}</p>
-            <p className="text-gray-300 mt-2">{getMovie.data.Type}</p>
-            <button className="text-base text-white cursor-pointer mt-2 font-semibold">
-              Shop Now &rarr;
-            </button>
+            <p className="text-gray-300 mt-2">
+              {getMovie.data.Type.toUpperCase()}
+            </p>
           </div>
         </div>
       </div>
